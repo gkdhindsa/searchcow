@@ -176,3 +176,20 @@ p{
     }
    
 }
+@media (max-width: 320px){
+    .union{
+        height: 50px;
+    }
+    .searchcow{
+        width: 130px;
+    }
+    .magnify{
+        height: 20px;
+    }
+    .search-bar{
+        padding: 1rem;
+    }
+    .search-input{
+        font-size: 1rem;
+    }
+} 
