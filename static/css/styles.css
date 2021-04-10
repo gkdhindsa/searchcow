@@ -1,16 +1,18 @@
 body{
     margin: 0;
     padding: 0;
-   
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-   
     overflow-x: hidden;
+    scroll-behavior: smooth;
     
 }
+.hide{
+    display: none;
+}
 .container{
-    padding: 3rem;
-    width: 100%;
+    margin: 5vh 5vw;
+    min-height: 90vh;
 }
 .union{
     margin-right: 1rem;
@@ -52,6 +54,7 @@ body{
     padding: 2rem;
     text-align: center;
     width: 300px;
+    margin-right: 1rem;
 }
 .best-deal{
     border: 1px solid #1AC94B;
@@ -96,3 +99,35 @@ margin: 2rem auto 1rem auto;
     border: 0;
     width: 100%;
 }
+
+/*Landing page*/
+.landing-container{
+    margin-top: 3rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+h1, h2{
+    font-family: 500;
+}
+h1{
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+h2{
+    font-size: 2rem;
+   
+}
+p{
+    color: #767676;
+}
+.landing{
+   width: 500px;
+}
+.landing:nth-child(1), .landing:nth-child(2){
+    margin-right: 2rem;
+}
+
+
