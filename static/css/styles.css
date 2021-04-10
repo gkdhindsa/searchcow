@@ -22,6 +22,9 @@ body{
     align-items: center;
     margin-bottom: 3rem;
 }
+.magnify{
+    
+}
 .search-bar{
     border: 1px solid #9B9B9B;
     border-radius: 16px;
@@ -35,9 +38,9 @@ body{
     font-family: 'Lexend', sans-serif;
     border: none;
     font-size: 2rem;
-    margin-left: 2rem;
-    flex-grow: 1;
     background-color: #F6F6F6;
+    padding-left: 2rem;
+    max-width: 80%;
 }
 .search-input::placeholder{
     color: black;
@@ -46,8 +49,10 @@ body{
     border: none;
 }
 .cards-container{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .card{
     background-color: #F6F6F6;
@@ -55,6 +60,7 @@ body{
     text-align: center;
     width: 300px;
     margin-right: 1rem;
+    max-width: 33.33%;
 }
 .best-deal{
     border: 1px solid #1AC94B;
@@ -124,10 +130,48 @@ p{
     color: #767676;
 }
 .landing{
-   width: 500px;
+   max-width: 500px;
 }
 .landing:nth-child(1), .landing:nth-child(2){
     margin-right: 2rem;
 }
 
+/*Media Queries*/
 
+@media (max-width: 768px) {
+    h1{
+        margin: 2rem 0;
+        font-size: 2rem;
+        padding: 0;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    .landing:nth-child(1), .landing:nth-child(2){
+        margin-right: 0;
+    }
+    .landing-container{
+        flex-direction: column;
+    }
+    .landing{
+        margin-bottom: 3rem;
+        text-align: center;
+        max-width: 100%;
+    }
+   
+    .cards-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .search-input{
+        font-size: 1.5rem;
+    }
+   
+}
