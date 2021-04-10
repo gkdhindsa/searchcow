@@ -1,10 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #050505;
+   
     box-sizing: border-box;
-    font-family: 'Lexend', sans-serif;
-    color: #fff;
+    font-family: 'Inter', sans-serif;
+   
     overflow-x: hidden;
     
 }
@@ -27,14 +27,18 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
+    background-color: #F6F6F6;
 }
 .search-input{
-    background-color: #050505;
     font-family: 'Lexend', sans-serif;
     border: none;
     font-size: 2rem;
     margin-left: 2rem;
     flex-grow: 1;
+    background-color: #F6F6F6;
+}
+.search-input::placeholder{
+    color: black;
 }
 .search-input:focus{
     border: none;
@@ -44,9 +48,10 @@ body{
     flex-wrap: wrap;
 }
 .card{
-    background-color: #1A1A1A;
+    background-color: #F6F6F6;
     padding: 2rem;
     text-align: center;
+    width: 300px;
 }
 .best-deal{
     border: 1px solid #1AC94B;
@@ -54,30 +59,31 @@ box-sizing: border-box;
 border-radius: 16px;
 font-size: 0.8rem;
 width: fit-content;
-padding: 0.5rem;
-margin: 0 auto 1rem auto;
+padding: 2px 2rem;
+margin: 2rem auto 1rem auto;
 
 }
 .item-name{
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 .item-company{
-    color: #1AC94B;
-    font-size: 0.9rem;
+    
+    font-size: 1.2rem;
+}
+.dot{
+    margin: 0 0.5rem;
 }
 .item-price{
     font-weight: 600;
     font-size: 1.2rem;
 }
 .item-desc{
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
-.item-desc p{
-    font-size: 0.8rem;
-    color:#F6F6F6;
-    font-weight: 300;
-    margin: 0;
+.item-desc li{
+   font-size: 0.8rem;
+   text-align: left;
 }
 .buy-now{
     background-color: #1AC94B;
@@ -85,7 +91,8 @@ margin: 0 auto 1rem auto;
     font-family: 'Lexend', sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    padding: 0.2rem 1rem;
+    padding: 0.4rem 1rem;
     border-radius: 7px;
     border: 0;
+    width: 100%;
 }
